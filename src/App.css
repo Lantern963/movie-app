@@ -1,0 +1,63 @@
+body {
+  background: #131a22;
+  color: #ffffff;
+}
+
+.movie-app > .row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.image-container {
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.image-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 10;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #37e2d5;
+}
+
+.xy {
+  width: 250px;
+  height: 300px;
+}
+
+.xx {
+  width: 250px;
+  height: 300px;
+}
+
+.addwatch {
+  font-size: 1rem;
+}
