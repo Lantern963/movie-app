@@ -1,5 +1,6 @@
 {
   "name": "movie-app",
+  "homepage": "https://Lantern963.github.io/movie-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "boostrap": "^2.0.0",
     "bootstrap": "^4.6.1",
+    "gh-pages": "^4.0.0",
     "react": "^18.1.0",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^18.1.0",
@@ -16,6 +18,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

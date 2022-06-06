@@ -3,11 +3,11 @@ import React from "react";
 const WatchRemove = () => {
   return (
     <>
-      <span className="mr-2">Remove from Watchlist</span>
+      <span className="mr-2 addwatch">Remove from Watchlist</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
+        width="1em"
+        height="1em"
         fill="red"
         class="bi bi-trash-fill"
         viewBox="0 0 16 16"

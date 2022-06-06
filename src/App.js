@@ -7,6 +7,7 @@ import SearchMovie from "./components/SearchMovie";
 import WatchList from "./components/WatchList";
 import WatchL from "./components/WatchL";
 import Footer from "./components/Footer";
+import WatchRemove from "./components/WatchRemove";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
@@ -59,15 +60,21 @@ const App = () => {
             addtowatchlist={addWL}
           />
         </div>
-        <div style={x ? null : { display: "none" }}>
-          <div className="row d-flex align-item-center mt-4 mb-4">
-            <MovieHeading heading="Watchlist" />
+        {x && (
+          <div>
+            <div className="row d-flex align-item-center mt-4 mb-4">
+              <MovieHeading heading="Watchlist" />
+            </div>
+            <div className="row">
+              <WatchL
+                movies={watchlist}
+                removemovie={WatchRemove}
+                deleteitem={deletemovie}
+              />
+            </div>
+            <Footer />
           </div>
-          <div className="row">
-            <WatchL movies={watchlist} deleteitem={deletemovie} />
-          </div>
-          <Footer />
-        </div>
+        )}
       </div>
     </div>
   );
